@@ -217,7 +217,7 @@
         }, 
         {
             "location": "/available_roles/", 
-            "text": "ansible-postgresql-objects role\n\n\nensure_postgresql_up role\n\n\ngalaxy-extras role\n\n\ngalaxy-tools role\n\n\ngalaxy-os role\n\n\ngalaxy role\n\n\nansible-trackster role\n\n\nminiconda role", 
+            "text": "ansible-postgresql-objects role\n\n\nensure_postgresql_up role\n\n\ngalaxy-os role\n  \n\n\nminiconda role\n\n\ngalaxy role\n  \n\n\ngalaxy-extras role\n  \n\n\nansible-trackster role\n\n\ngalaxy-tools role", 
             "title": "Available roles"
         }, 
         {
