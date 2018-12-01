@@ -15,15 +15,3 @@ tools:
   - 9ea374bb0350
   tool_panel_section_label: biologie des genomes
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: regex_replace
-  owner: kellrott
-  revisions:
-  - 9a77d5fca67c
-  tool_panel_section_label: biologie des genomes
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: text_processing
-  owner: bgruening
-  revisions:
-  - 20344ce0c811
-  tool_panel_section_label: biologie des genomes
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
