@@ -1,0 +1,259 @@
+{
+   "uuid":"fbcd852c-580f-4fb3-9e32-24412d0fe61e",
+   "tags":[
+
+   ],
+   "format-version":"0.1",
+   "name":"Extract canonical transposons fasta",
+   "version":3,
+   "steps":{
+      "0":{
+         "tool_id":null,
+         "tool_version":null,
+         "outputs":[
+
+         ],
+         "workflow_outputs":[
+
+         ],
+         "input_connections":{
+
+         },
+         "tool_state":"{}",
+         "id":0,
+         "uuid":"decd6076-b698-4941-99f7-55cafbcb852e",
+         "errors":null,
+         "name":"Input dataset",
+         "label":"Canonical transposon EMBL format",
+         "inputs":[
+
+         ],
+         "position":{
+            "top":201,
+            "left":200
+         },
+         "annotation":"",
+         "content_id":null,
+         "type":"data_input"
+      },
+      "1":{
+         "tool_id":"Grep1",
+         "tool_version":"1.0.1",
+         "outputs":[
+            {
+               "type":"input",
+               "name":"out_file1"
+            }
+         ],
+         "workflow_outputs":[
+
+         ],
+         "input_connections":{
+            "input":{
+               "output_name":"output",
+               "id":0
+            }
+         },
+         "tool_state":"{\"__page__\": null, \"pattern\": \"\\\"(^ID)|( +[GATCN]{10})\\\"\", \"invert\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy/config/len/?.len\\\"\", \"__rerun_remap_job_id__\": null}",
+         "id":1,
+         "uuid":"07402c93-2434-4df5-aba7-064ea3891f71",
+         "errors":null,
+         "name":"Select",
+         "post_job_actions":{
+            "HideDatasetActionout_file1":{
+               "output_name":"out_file1",
+               "action_type":"HideDatasetAction",
+               "action_arguments":{
+
+               }
+            }
+         },
+         "label":null,
+         "inputs":[
+            {
+               "name":"input",
+               "description":"runtime parameter for tool Select"
+            }
+         ],
+         "position":{
+            "top":318,
+            "left":362.5
+         },
+         "annotation":"",
+         "content_id":"Grep1",
+         "type":"tool"
+      },
+      "2":{
+         "tool_id":"toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+         "tool_version":"0.1.0",
+         "outputs":[
+            {
+               "type":"input",
+               "name":"out_file1"
+            }
+         ],
+         "workflow_outputs":[
+
+         ],
+         "input_connections":{
+            "input":{
+               "output_name":"out_file1",
+               "id":1
+            }
+         },
+         "tool_state":"{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy/config/len/?.len\\\"\", \"checks\": \"[{\\\"__index__\\\": 0, \\\"pattern\\\": \\\"^ID   \\\", \\\"replacement\\\": \\\">\\\"}, {\\\"__index__\\\": 1, \\\"pattern\\\": \\\"([GATCN]+) \\\", \\\"replacement\\\": \\\"\\\\\\\\1\\\"}]\", \"__page__\": null}",
+         "id":2,
+         "tool_shed_repository":{
+            "owner":"jjohnson",
+            "changeset_revision":"9ea374bb0350",
+            "name":"regex_find_replace",
+            "tool_shed":"toolshed.g2.bx.psu.edu"
+         },
+         "uuid":"4167672c-38ae-47e5-8cd7-158f4d3ccc0b",
+         "errors":null,
+         "name":"Regex Find And Replace",
+         "post_job_actions":{
+            "HideDatasetActionout_file1":{
+               "output_name":"out_file1",
+               "action_type":"HideDatasetAction",
+               "action_arguments":{
+
+               }
+            }
+         },
+         "label":null,
+         "inputs":[
+            {
+               "name":"input",
+               "description":"runtime parameter for tool Regex Find And Replace"
+            }
+         ],
+         "position":{
+            "top":318,
+            "left":582.5
+         },
+         "annotation":"",
+         "content_id":"toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+         "type":"tool"
+      },
+      "3":{
+         "tool_id":"toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+         "tool_version":"0.1.0",
+         "outputs":[
+            {
+               "type":"input",
+               "name":"out_file1"
+            }
+         ],
+         "workflow_outputs":[
+
+         ],
+         "input_connections":{
+            "input":{
+               "output_name":"out_file1",
+               "id":2
+            }
+         },
+         "tool_state":"{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy/config/len/?.len\\\"\", \"checks\": \"[{\\\"__index__\\\": 0, \\\"pattern\\\": \\\" +([GATCN]+) +\\\\\\\\d+\\\", \\\"replacement\\\": \\\"\\\\\\\\1\\\"}]\", \"__page__\": null}",
+         "id":3,
+         "tool_shed_repository":{
+            "owner":"jjohnson",
+            "changeset_revision":"9ea374bb0350",
+            "name":"regex_find_replace",
+            "tool_shed":"toolshed.g2.bx.psu.edu"
+         },
+         "uuid":"06ef3eaa-614c-4507-9123-2ac6be832dc6",
+         "errors":null,
+         "name":"Regex Find And Replace",
+         "post_job_actions":{
+            "HideDatasetActionout_file1":{
+               "output_name":"out_file1",
+               "action_type":"HideDatasetAction",
+               "action_arguments":{
+
+               }
+            }
+         },
+         "label":null,
+         "inputs":[
+            {
+               "name":"input",
+               "description":"runtime parameter for tool Regex Find And Replace"
+            }
+         ],
+         "position":{
+            "top":318,
+            "left":802.5
+         },
+         "annotation":"",
+         "content_id":"toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+         "type":"tool"
+      },
+      "4":{
+         "tool_id":"toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+         "tool_version":"0.1.0",
+         "outputs":[
+            {
+               "type":"input",
+               "name":"out_file1"
+            }
+         ],
+         "workflow_outputs":[
+            {
+               "output_name":"out_file1",
+               "uuid":"6c595dce-aa3b-45cd-b55a-3b957cc83efa",
+               "label":null
+            }
+         ],
+         "input_connections":{
+            "input":{
+               "output_name":"out_file1",
+               "id":3
+            }
+         },
+         "tool_state":"{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"checks\": \"[{\\\"__index__\\\": 0, \\\"pattern\\\": \\\" +.+\\\", \\\"replacement\\\": \\\"\\\"}]\", \"__page__\": null}",
+         "id":4,
+         "tool_shed_repository":{
+            "owner":"jjohnson",
+            "changeset_revision":"9ea374bb0350",
+            "name":"regex_find_replace",
+            "tool_shed":"toolshed.g2.bx.psu.edu"
+         },
+         "uuid":"44cd5560-6c00-4882-81d7-db736338ff9f",
+         "errors":null,
+         "name":"Regex Find And Replace",
+         "post_job_actions":{
+            "ChangeDatatypeActionout_file1":{
+               "output_name":"out_file1",
+               "action_type":"ChangeDatatypeAction",
+               "action_arguments":{
+                  "newtype":"fasta"
+               }
+            },
+            "RenameDatasetActionout_file1":{
+               "output_name":"out_file1",
+               "action_type":"RenameDatasetAction",
+               "action_arguments":{
+                  "newname":"Canonical_transposons.fa"
+               }
+            }
+         },
+         "label":null,
+         "inputs":[
+            {
+               "name":"input",
+               "description":"runtime parameter for tool Regex Find And Replace"
+            }
+         ],
+         "position":{
+            "top":318,
+            "left":1023.5
+         },
+         "annotation":"",
+         "content_id":"toolshed.g2.bx.psu.edu/repos/jjohnson/regex_find_replace/regex1/0.1.0",
+         "type":"tool"
+      }
+   },
+   "annotation":"",
+   "a_galaxy_workflow":"true"
+}

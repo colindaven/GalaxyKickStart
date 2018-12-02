@@ -15,9 +15,9 @@ tools:
   - 12b740c4cbc1
   tool_panel_section_label: biologie des genomes
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-- name: regex_replace
-  owner: kellrott
+- name: regex_find_replace
+  owner: jjohnson
   revisions:
-  - 9a77d5fca67c
+  - 9ea374bb0350
   tool_panel_section_label: biologie des genomes
   tool_shed_url: https://toolshed.g2.bx.psu.edu
