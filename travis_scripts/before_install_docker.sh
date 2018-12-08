@@ -18,6 +18,7 @@ export CID1=`docker run -d --privileged=true -p 80:80 -p 21:21\
   -v /tmp/:/tmp/ \
   -v /export:/export \
   galaxy_kickstart`
+docker exec $CID sudo su galaxy -c '/home/galaxy/galaxy/.venv/bin/pip install cryptography==2.2.2'
 
 export CID2=`docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 \
   --privileged=true \
