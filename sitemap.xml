@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>None</loc>
+     <loc>/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/about/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/getting_started/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/customizations/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/installing_tools_and_workflows/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/examples/docker/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/examples/vagrant/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/faq/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/available_roles/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/available_variables/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/metavisitor/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/GKS2slurm/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
+     <loc>/GKSfromWorflows/</loc>
      <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
