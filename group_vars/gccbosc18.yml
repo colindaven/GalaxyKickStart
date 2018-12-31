@@ -16,7 +16,6 @@ galaxy_config:
     job_config_file: "{{ galaxy_job_conf_path }}"
     ftp_upload_dir: "{{ proftpd_files_dir }}"
     ftp_upload_site: ftp://[server IP address]
-    tool_data_table_config_path: "{{ tool_data_table_config_path }}"
     len_file_path: "{{ len_file_path }}"
     check_migrate_tools: False
   uwsgi:
