@@ -1,0 +1,2 @@
+[gccbosc18]
+localhost ansible_connection=local

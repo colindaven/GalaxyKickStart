@@ -24,6 +24,16 @@
     - set_fact:
         banner_img: "{% if 'jetstream' in group_names %}jetstream_text.png{% else %}gce_text.png{% endif %}"
 
+    - name: Create galaxy system user
+      user:
+        name: "galaxy"
+        home: "/srv/galaxy"
+        skeleton: "/etc/skel"
+        shell: "/bin/bash"
+        system: yes
+      tags:
+          - always
+
   roles:
 
     - role: galaxyprojectdotorg.galaxy-os
