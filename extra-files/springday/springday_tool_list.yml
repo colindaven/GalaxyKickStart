@@ -1,0 +1,109 @@
+tools:
+- name: cutadapt
+  owner: lparsons
+  revisions:
+  - 49370cb85f0f
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_bowtie2_index_builder
+  owner: devteam
+  revisions:
+  - 83da94c0e4a6
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ggplot2_heatmap2
+  owner: iuc
+  revisions:
+  - ca7cb0eaad62
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fastqc
+  owner: devteam
+  revisions:
+  - 3e1cdf5406db
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gtftobed12
+  owner: iuc
+  revisions:
+  - 57d45064f114
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: featurecounts
+  owner: iuc
+  revisions:
+  - af814359d244
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_hisat2_index_builder
+  owner: iuc
+  revisions:
+  - d210e1f185bd
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_star_index_builder
+  owner: iuc
+  revisions:
+  - 6ef6520f14fc
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rseqc
+  owner: nilesh
+  revisions:
+  - f437057e46f1
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: hisat2
+  owner: iuc
+  revisions:
+  - 3fb01a8c902d
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: data_manager_fetch_genome_dbkeys_all_fasta
+  owner: devteam
+  revisions:
+  - b1bc53e9bbc5
+  tool_panel_section_label: None
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: goseq
+  owner: iuc
+  revisions:
+  - 07f6832bdd4d
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: volcanoplot
+  owner: iuc
+  revisions:
+  - 6d532d760950
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rgrnastar
+  owner: iuc
+  revisions:
+  - d5659efd66aa
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: deseq2
+  owner: iuc
+  revisions:
+  - e5c8afac22a7
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: filter_by_fasta_ids
+  owner: galaxyp
+  revisions:
+  - 3c623e81be77
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: multiqc
+  owner: iuc
+  revisions:
+  - 161f4383df15
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: column_maker
+  owner: devteam
+  revisions:
+  - 464b9305180e
+  tool_panel_section_label: RNAseq
+  tool_shed_url: toolshed.g2.bx.psu.edu
