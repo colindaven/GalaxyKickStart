@@ -68,7 +68,7 @@ tools:
 - name: goseq
   owner: iuc
   revisions:
-  - 07f6832bdd4d
+  - ae39895af5fe
   tool_panel_section_label: RNAseq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: volcanoplot
@@ -86,7 +86,7 @@ tools:
 - name: deseq2
   owner: iuc
   revisions:
-  - e5c8afac22a7
+  - d9e5cadc7f0b
   tool_panel_section_label: RNAseq
   tool_shed_url: toolshed.g2.bx.psu.edu
 - name: filter_by_fasta_ids
