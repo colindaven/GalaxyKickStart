@@ -105,7 +105,7 @@ tools:
 - name: samtools_flagstat
   owner: devteam
   revisions:
-  - cc61ade70eb8
+  - 22970df7a40e
   tool_panel_section_label: Pasteur
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 
