@@ -1,0 +1,6 @@
+galaxy_tools_tool_list_files:
+  - "extra-files/analyseGenomes/analyseGenomes_tool_list.yml"
+additional_files_list:
+  - { src: "extra-files/analyseGenomes/logo.png", dest: "{{ galaxy_server_dir }}/static/images/" }
+  - { src: "extra-files/analyseGenomes/tool_sheds_conf.xml", dest: "{{ galaxy_config_dir }}" }
+  - { src: "extra-files/analyseGenomes/job_conf.xml", dest: "{{ galaxy_config_dir }}" }
