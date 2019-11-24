@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+<!-- Modify this file as wanted and copy it as job_conf.xml.j2 in roles/galaxyprojectdotorg.galaxy-extras/templates/ -->
+<!-- in replacement of the existing job_conf.xml.j2 -->
 <job_conf>
     <plugins workers="2">
         <plugin id="slurm" type="runner" load="galaxy.jobs.runners.slurm:SlurmJobRunner">
@@ -14,40 +16,42 @@
             <handler id="handler3" tags="handlers"/>
           </handlers>
     <!-- The default destination can be changed by specifying the GALAXY_DESTINATIONS_DEFAULT environment variable. -->
-    <destinations default_from_environ="GALAXY_DESTINATIONS_DEFAULT" default="slurm_cluster">
+    <destinations default="slurm_cluster">
         <destination id="slurm_cluster" runner="slurm">
             <env file="/home/galaxy/galaxy/.venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
-            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=1 --share</param>
+            <param id="nativeSpecification">--partition=debug --ntasks=1 --share</param>
         </destination>
         <destination id="slurm_cluster_2" runner="slurm">
             <env file="/home/galaxy/galaxy/.venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
-            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=2 --share</param>
+            <param id="nativeSpecification">--partition=debug --ntasks=2 --share</param>
         </destination>
         <destination id="slurm_cluster_4" runner="slurm">
             <env file="/home/galaxy/galaxy/.venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
-            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=4 --share</param>
+            <param id="nativeSpecification">--partition=debug --ntasks=4 --share</param>
         </destination>
         <destination id="slurm_cluster_8" runner="slurm">
             <env file="/home/galaxy/galaxy/.venv/bin/activate"/>
             <param id="enabled" from_environ="GALAXY_RUNNERS_ENABLE_SLURM">true</param>
-            <param id="nativeSpecification" from_environ="NATIVE_SPEC">--ntasks=8 --share</param>
+            <param id="nativeSpecification">--partition=debug --ntasks=8 --share</param>
         </destination>
     </destinations>
     <limits>
     </limits>
     <tools>
-        <tool id="retrieve_fasta_from_NCBI" destination="slurm_cluster_2"/>
-        <tool id="bowtieForSmallRNA" destination="slurm_cluster_4"/>
-        <tool id="trinity" destination="slurm_cluster_4"/>
-        <tool id="spades" destination="slurm_cluster_4"/>
+        <tool id="bowtie_wrappers" destination="slurm_cluster_8"/>
+        <tool id="deseq2" destination="slurm_cluster_2"/>
+        <tool id="fastqc" destination="slurm_cluster_2"/>
+        <tool id="featurecounts" destination="slurm_cluster_2"/>
+        <tool id="samtools_flagstat" destination="slurm_cluster_2"/>
         <tool id="bowtie2" destination="slurm_cluster_4"/>
-        <tool id="ncbi_blastn_wrapper" destination="slurm_cluster_4"/>
-        <tool id="ncbi_blastx_wrapper" destination="slurm_cluster_4"/>
-        <tool id="ncbi_tblastx_wrapper" destination="slurm_cluster_4"/>
-        <tool id="ncbi_tblastn_wrapper" destination="slurm_cluster_4"/>
-        <tool id="khmer_normalize_by_median" destination="slurm_cluster_8"/>
+        <tool id="samtools_idxstats" destination="slurm_cluster_2"/>
+        <tool id="small_rna_maps" destination="slurm_cluster_8"/>
+        <tool id="small_rna_signatures" destination="slurm_cluster_8"/>
+        <tool id="sr_bowtie" destination="slurm_cluster_4"/>
+        <tool id="sr_bowtie_dataset_annotation" destination="slurm_cluster_4"/>
     </tools>
 </job_conf>
+
