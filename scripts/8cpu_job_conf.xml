@@ -43,7 +43,7 @@
     <tools>
         <tool id="bowtie2" destination="slurm_cluster_8"/>
         <tool id="bowtie-align" destination="slurm_cluster_8"/>
-        <tool id="bowtie_wrappers" destination="slurm_cluster_8"/>
+        <tool id="bowtie_wrapper" destination="slurm_cluster_8"/>
         <tool id="deseq2" destination="slurm_cluster_2"/>
         <tool id="fastqc" destination="slurm_cluster_2"/>
         <tool id="featurecounts" destination="slurm_cluster_2"/>
