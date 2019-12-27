@@ -53,6 +53,7 @@
         <tool id="small_rna_maps" destination="slurm_cluster_8"/>
         <tool id="small_rna_signatures" destination="slurm_cluster_8"/>
         <tool id="sr_bowtie" destination="slurm_cluster_4"/>
+        <tool id="bowtieForSmallRNA" destination="slurm_cluster_4"/>
         <tool id="sr_bowtie_dataset_annotation" destination="slurm_cluster_4"/>
     </tools>
 </job_conf>
