@@ -1,11 +1,163 @@
 tools:
-- name: data_manager_fetch_genome_dbkeys_all_fasta
+
+- name: regex_replace
+  owner: kellrott
+  revisions:
+  - 9a77d5fca67c
+  tool_panel_section_label: biologie des genomes
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: column_regex_substitution
+  owner: blankenberg
+  revisions:
+  - 12b740c4cbc1
+  tool_panel_section_label: biologie des genomes
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: regex_find_replace
+  owner: jjohnson
+  revisions:
+  - 9ea374bb0350
+  tool_panel_section_label: biologie des genomes
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: fastqc
   owner: devteam
-  tool_panel_section_label: 'Data Managers'
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: yac_clipper
+  owner: artbio
+  revisions:
+  - f7947c5a18b8
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+
+- name: sr_bowtie
+  owner: artbio
+  revisions:
+  - 0281bb245635
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+
+- name: small_rna_maps
+  owner: artbio
+  revisions:
+  - f82badb66c34
+  tool_panel_section_label: Pasteur
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
   install_resolver_dependencies: True
 
 - name: data_manager_bowtie2_index_builder
   owner: devteam
-  tool_panel_section_label: 'Data Managers'
+  tool_panel_section_label: null
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+
+- name: data_manager_bowtie_index_builder
+  owner: iuc
+  tool_panel_section_label: null
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+
+- name: data_manager_fetch_genome_dbkeys_all_fasta
+  owner: devteam
+  tool_panel_section_label: null
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: data_manager_sam_fasta_index_builder
+  owner: devteam
+  tool_panel_section_label: null
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: sr_bowtie_dataset_annotation
+  owner: artbio
+  revisions:
+  - 8829656d6999
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: small_rna_signatures
+  owner: artbio
+  revisions:
+  - 59ee49bfb7bb
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: bowtie_wrappers
+  owner: devteam
+  revisions:
+  - b46e7d48076a
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+
+- name: samtools_flagstat
+  owner: devteam
+  revisions:
+  - 22970df7a40e
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: sam_to_bam
+  owner: devteam
+  revisions:
+  - f7a0d41036c7
+  
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+
+- name: bam_to_sam
+  owner: devteam
+  tool_panel_section_label: SAMTOOLS
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+
+- name: samtool_filter2
+  owner: devteam
+  revisions:
+  - a7add3e93cc5
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+
+- name: featurecounts
+  owner: iuc
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: deseq2
+  owner: iuc
+  revisions:
+  - 0696db066a5b
+  tool_panel_section_label: Pasteur
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: picard
+  owner: devteam
+  revisions:
+  - fc288950c3b7
+  tool_panel_section_label: Picard Tools
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: suite_samtools
+  owner: iuc
+  tool_panel_section_label: SAMTOOLS
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True

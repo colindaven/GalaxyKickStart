@@ -8,3 +8,13 @@ galaxy_handler_processes: 4
 postgres_user_uid: 1550
 postgres_user_gid: 1550
 install_apparmor: false
+
+# Enable interactive environments
+galaxy_extras_config_ie_proxy: true
+supervisor_manage_ie_proxy: true
+supervisor_ie_proxy_autostart: true
+galaxy_extras_ie_fetch_jupyter: false
+galaxy_extras_ie_jupyter_image: quay.io/bgruening/docker-jupyter-notebook:17.09
+galaxy_extras_ie_fetch_rstudio: false
+galaxy_extras_ie_rstudio_image: artbio/rstudio-notebook:latest
+
