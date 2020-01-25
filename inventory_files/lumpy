@@ -1,4 +1,4 @@
-[artimed]
+[lumpy]
 localhost ansible_connection=local
 
 # change to the line below if remote target host
